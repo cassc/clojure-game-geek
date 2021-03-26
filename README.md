@@ -1,5 +1,18 @@
 # clojure-game-geek
 
+
+* To start database,
+
+```sh
+docker-compose up
+```
+
+* To start server
+
+```sh
+lein run
+```
+
 Example code for the [Lacinia](https://github.com/walmartlabs/lacinia) GraphQL framework tutorial.
 
 The tutorial is available at http://lacinia.readthedocs.io/en/latest/tutorial/
@@ -9,4 +22,3 @@ The tutorial is available at http://lacinia.readthedocs.io/en/latest/tutorial/
 Copyright © 2017 Walmart
 
 Released under the terms of the Apache Software License 2.0.
-

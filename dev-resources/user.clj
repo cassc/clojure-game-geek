@@ -34,4 +34,9 @@
 (comment
   (start)
   (stop)
+
+  (q "{ game_by_id(id: 3) { id name summary }}")
+
+
+  ;;
   )

@@ -21,7 +21,7 @@
 
   (start [this]
     (assoc this
-           :ds (pooled-data-source "localhost" "cggdb" "cgg_role" "lacinia" 25432)))
+           :ds (pooled-data-source "localhost" "cggdb" "ca" "ca" 5432)))
 
   (stop [this]
     (-> ds :datasource .close)
@@ -105,3 +105,13 @@
           game-id member-id rating rating])
 
   nil)
+
+
+;; Rich comment block with redefined vars ignored
+#_{:clj-kondo/ignore [:redefined-var]}
+(comment
+  (def db (pooled-data-source "localhost" "cggdb" "ca" "ca" 5432))
+  (jdbc/query db ["select * from game_rating"])
+
+  ;;
+  ) ;; End of rich comment block
